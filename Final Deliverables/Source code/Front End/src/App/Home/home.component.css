@@ -1,0 +1,42 @@
+body {
+   
+    /* background-image: url("../../assets/HeartBg1.png"); */
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    height: 350vh;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke; 
+}
+
+.container{
+    padding: 20px;
+    font-size: 18px;
+}
+
+.input-card{
+    padding: 3rem;
+    color: black;
+    margin-left: 50px;
+    margin-top: 90px;
+   
+}
+.collapse,.collapsing
+{
+    width: 100%;
+
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn-submit{
+    margin-top: 20px;
+    background-color: blueviolet;
+    color: white;
+
+}

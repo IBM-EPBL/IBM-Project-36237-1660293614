@@ -1,0 +1,110 @@
+<app-navbar></app-navbar>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<div class="container">
+
+			<!-- <form #inputFile (ngSubmit)= "addData(inputFile)" > -->
+			<form action="DoMakeApplication" method="post" onsubmit="alert('The patient has no risk of heart diseases');">
+			<!-- <form  (ngSubmit)="onSubmit()"> -->
+			<h2 style="text-align: center; margin:10px 0 10px 0">
+				Heart Disease Prediction
+			</h2>
+			
+			<div>
+				<p>The leading cause of death in the developed world is heart disease. Therefore there needs to be work done to help prevent the risks of of having a heart attack or stroke.</p>
+			</div>
+			<!-- <p>
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+					aria-expanded="false" aria-controls="collapseExample">
+					Provide Input
+				</button>
+			</p>
+			<div class="collapse" id="collapseExample" style="padding: 0;">
+				<div class="card input-card" style="width: 80px;"> -->
+			
+				<div class="card-body">
+						<div class="form-group">
+
+							<!-- <ngx-dropzone accept="text/csv" (change)="onSelect($event)">
+								<ngx-dropzone-label>Upload CSV here</ngx-dropzone-label>
+								<ngx-dropzone-preview *ngFor="let f of files" [removable]="true" (removed)="onRemove(f)">
+									<ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+								</ngx-dropzone-preview>
+							</ngx-dropzone> -->
+							
+								<label for="age">Age(in years)</label>
+								<input type="int" name="age" class="form-control" ngModel>
+								<br>
+								<label for="sex">Sex(0-Female,1-Male)</label>
+								<input type="int" name="sex" class="form-control" ngModel>
+								<br>
+								<label for="painType">Chest Pain Type 
+									<li>
+									Value 1: typical angina</li><li>
+									Value 2: atypical angina</li><li>								
+									Value 3: non-anginal pain</li><li>							
+									Value 4: asymptomatic
+									</li>
+								</label>
+								<input type="int" name="age" class="form-control" ngModel>
+								<br>
+								<label for="bp">BP</label>
+								<input type="int" name="bp" class="form-control" ngModel>
+								<br>
+								<label for="cholestrol">Cholestrol</label>
+								<input type="int" name="cholestrol" class="form-control" ngModel>
+								<br>
+								<label for="fbs">FBS(fasting blood sugar > 120 mg/dl (1 = true; 0 = false))</label>
+								<input type="int" name="fbs" class="form-control" ngModel>
+								<br>
+								<label for="ekg">EKG(resting electrocardiographic results)
+									<li>Value 0: normal</li>
+									<li>Value 1: aving ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)</li>										
+									<li>Value 2: showing probable or definite left ventricular hypertrophy by Estes' criteria</li>
+								</label>
+								<input type="int" name="ekg" class="form-control" ngModel>
+								<br>
+								<label for="hr">Max HR (maximum heart rate achieved)</label>
+								<input type="int" name="hr" class="form-control" ngModel>
+								<br>
+								<label for="ex">Exercise angina (exercise induced angina (1 = yes; 0 = no))</label>
+								<input type="int" name="ex" class="form-control" ngModel>
+								<br>	
+								<label for="st">ST depression</label>
+								<input type="float" name="st" class="form-control" ngModel>
+								<br>
+								<label for="sot">Slope of ST</label>
+								<input type="float" name="sot" class="form-control" ngModel>
+								<br>
+								<label for="fluro">Number of vessels fluro (number of major vessels (0-3) colored by flourosopy)</label>
+								<input type="int" name="fluro" class="form-control" ngModel>
+								<br>
+								<label for="thal">Thallium: 3 = normal; 6 = fixed defect; 7 = reversable defect</label>
+								<input type="int" name="thal" class="form-control" ngModel>
+								<br>	
+
+
+								<button class="btn btn-submit" type="submit">Submit</button>
+							</div>
+
+
+						</div>
+						
+						
+
+				<!-- </div>
+				 -->
+		
+				<!-- <form #dataForm="ngForm"  *ngIf="data">
+					<div class="form-group">
+						<p>The patient is likely to have heart disease!</p>
+					</div> -->
+					
+				<!-- </form> -->
+			<!-- </div>
+			 -->
+
+			
+		</form>
+</div>
+</body>
